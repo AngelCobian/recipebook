@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'header-lmnt',
   templateUrl: './header.component.html',
-  styleUrl: [ './header.component.css' ]
+  // styleUrl: [ {'./header.component.css'} ]
 })
 
 export class HeaderComponent{
