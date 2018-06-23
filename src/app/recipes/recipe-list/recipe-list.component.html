@@ -6,7 +6,7 @@
 <div class="row">
   <div class="row div col-xs-12">
 
-    <recipe-item *ngFor="let recipeEl of recipes" (recipeWasSelected)="onRecipeSelected($event)" [recipe]="recipeEl" ></recipe-item>
+    <recipe-item *ngFor="let recipeEl of recipes" [recipe]="recipeEl" ></recipe-item>
   </div>
 </div>
 
