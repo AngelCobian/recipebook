@@ -1,18 +1,16 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-// import { templateJitUrl } from '@angular/compiler';
 
 @Component({
-  selector: 'header-lmnt',
-  templateUrl: './header.component.html',
-  styleUrls: [ './header.component.css' ]
+    selector: 'header-lmnt',
+    templateUrl: './header.component.html',
+    styleUrls: ['./header.component.css']
 })
-
-
 export class HeaderComponent {
-  @Output() featureSelected = new EventEmitter<string>();
+    @Output() featureSelected = new EventEmitter<string>();
 
-  selectFeature(feature: string) {
-      // pass feature to app component here
-      this.featureSelected.emit(feature);
+    selectFeature(feature: string) {
+        // pass feature to app component here
+        this.featureSelected.emit(feature);
+    }
 
-}}
+}
